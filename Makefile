@@ -1,12 +1,12 @@
 CC = gcc
-CLFAGS = @options
+CFLAGS = @options
 
 .PHONY: all clean
 
 all: algorithm_x
 
 algorithm_x: algorithm_x.c
-	$(CC) $(CLFAGS) -o $@ $<
+	$(CC) $(CFLAGS) -o $@ $<
 
 clean:
 	rm algorithm_x
