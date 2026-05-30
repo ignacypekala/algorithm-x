@@ -15,14 +15,12 @@ Run the program:
 
 ```bash
 ./algorithm_x
-
 ```
 
 Run the automated test suite (with Valgrind for memory leak checks):
 
 ```bash
 ./tests.sh true
-
 ```
 
 ### Usage Example
@@ -38,14 +36,12 @@ the `+` positions.
 A _ B
 _ C _
 D E _
-
 ```
 
 **Output:**
 
 ```text
 AC
-
 ```
 
 ## Technical Highlights
