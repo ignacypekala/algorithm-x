@@ -11,14 +11,9 @@ covered *exactly once*—with no overlaps and no missing pieces.
 
 ## How to Run
 
-Build the project:
+Run the program:
 ```bash
 make algorithm_x
-```
-
-Run the program:
-
-```bash
 ./algorithm_x
 ```
 
