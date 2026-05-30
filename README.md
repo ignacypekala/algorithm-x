@@ -77,7 +77,7 @@ This project was originally developed for the **Wstęp do Programowania (WDP)**
 (Introductory Programming) course at MIMUW (Faculty of Mathematics, Informatics
 and Mechanics of the University of Warsaw).
 
-* Course Code: [1000-211bWPI](https://www.google.com/search?q=https://usosweb.mimuw.edu.pl/kontroler.php%3F_action%3Dkatalog2%252Fprzedmioty%252FpokazPrzedmiot%26prz_kod%3D1000-211bWPI%26lang%3Den)
+* Course Code: [1000-211bWPI](https://usosweb.mimuw.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FpokazPrzedmiot&prz_kod=1000-211bWPI&lang=en)
 
 The source code in this repository is my own original work and is licensed
 under the [MIT License](./LICENSE).
