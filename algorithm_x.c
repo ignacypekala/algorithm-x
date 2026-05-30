@@ -50,13 +50,13 @@ char read_char() {
 int read_filter(char ** filter) {
     assert(*filter == NULL);
     int columns = 0, allocated_columns = DEFAULT_COLUMN_COUNT;
-    *filter = (char *) malloc(sizeof(char *) * (size_t) allocated_columns);
+    *filter = malloc(sizeof(char) * (size_t) allocated_columns);
 
     while (read_char() != '\n' && current_char != EOF) {
         columns++;
         if (columns > allocated_columns) {
             allocated_columns = min(allocated_columns * 2, MAX_COLUMN_COUNT);
-            *filter = (char *) realloc(*filter, sizeof(char *) * (size_t) allocated_columns);
+            *filter = realloc(*filter, sizeof(char) * (size_t) allocated_columns);
         }
         (*filter)[columns - 1] = current_char;
     }
@@ -68,8 +68,8 @@ int read_filter(char ** filter) {
 int read_matrix(char ***matrix, int columns) {
     assert(*matrix == NULL);
     int allocated_rows = DEFAULT_ROW_COUNT;
-    *matrix = (char **) malloc(sizeof(char **) * (size_t) allocated_rows);
-    char *row = malloc(sizeof(char *) * (size_t) columns);
+    *matrix = malloc(sizeof(char *) * (size_t) allocated_rows);
+    char *row = malloc(sizeof(char) * (size_t) columns);
     int rows = 0;
 
     int i = 0;
