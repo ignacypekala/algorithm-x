@@ -70,7 +70,7 @@ completely leak-proof, I wrote a custom testing suite.
     * `generate.py`: A Python script to generate exact cover matrices. 
         > Full disclosure: the generator is admittedly a bowl of spaghetti code that
         > only produces sensible test cases because I hand-picked the magic parameters,
-        > but it successfully brute-forces the necessary edge cases for validation.*
+        > but it successfully brute-forces the necessary edge cases for validation.
 
         The repository contains a lightweight sample of test cases for
         demonstration. The actual codebase was validated against a much larger
