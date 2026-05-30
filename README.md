@@ -11,6 +11,11 @@ covered *exactly once*—with no overlaps and no missing pieces.
 
 ## How to Run
 
+Build the project:
+```bash
+make algorithm_x
+```
+
 Run the program:
 
 ```bash
