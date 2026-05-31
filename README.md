@@ -5,7 +5,7 @@ using Donald Knuth's Algorithm X (recursive backtracking).
 
 Given a set of elements and a collection of subsets (represented as a matrix),
 the program systematically finds combinations of rows where every element is
-covered *exactly once*—with no overlaps and no missing pieces.
+covered *exactly once*, with no overlaps and no missing pieces.
 
 ![preview](./assets/preview.gif)
 
