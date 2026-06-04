@@ -13,11 +13,12 @@ covered *exactly once*, with no overlaps and no missing pieces.
 
 ### Prerequisites
 
-* GCC compiler
+* GCC compiler (with C23 support)
+* Make
 
 For running the test suite:
 
-* A Linux/Unix environment
+* A Linux/Unix environment (bash, sort, diff)
 * `valgrind` (required for the memory-check test suite)
 * Python 3 (optional, for running the test generators)
 
