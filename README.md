@@ -11,6 +11,18 @@ covered *exactly once*, with no overlaps and no missing pieces.
 
 ## How to Run
 
+### Prerequisites
+
+* GCC compiler
+
+For running the test suite:
+
+* A Linux/Unix environment
+* `valgrind` (required for the memory-check test suite)
+* Python 3 (optional, for running the test generators)
+
+### Instructions
+
 Run the program:
 
 ```bash
