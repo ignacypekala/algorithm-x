@@ -64,12 +64,19 @@ AC
 To thoroughly validate the recursive backtracking logic and ensure strict
 memory safety, I built a custom two-part automated testing pipeline:
 
-* [tests.sh](./tests.sh), [test.sh](./test.sh): Bash scripts that pipe
-inputs into the compiled binary, compare outputs via diff, and verify
-memory safety using Valgrind.
+* [tests.sh](./tests.sh), [test.sh](./test.sh): 
+    Bash scripts that automate the testing execution. They pipe inputs into the
+    compiled binary, verify memory safety with Valgrind, and use diff to compare
+    the C program's output against the expected results.
 
-* [generate.py](./generate.py): A Python script to algorithmically generate
-exact cover matrices.
+* [generate.py](./generate.py): 
+    A Python script that algorithmically constructs exact cover matrices to
+    serve as complex test cases.
+
+* [solver.py](./solver.py):
+    A Python implementation of Algorithm X that acts
+    as the "source of truth," solving the generated matrices to produce the correct
+    expected outputs for the test suite.
 
 > Full disclosure: the generator is admittedly a bowl of spaghetti code
 > that only produces sensible test cases because I hand-picked the magic
