@@ -1,6 +1,6 @@
 # Algorithm X
 
-A command-line program written in C that solves the **exact cover problem**
+A C program that solves the **exact cover problem**
 using Donald Knuth's Algorithm X (recursive backtracking).
 
 Given a set of elements and a collection of subsets (represented as a matrix),
