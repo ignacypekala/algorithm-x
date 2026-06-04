@@ -1,0 +1,2 @@
+ # Stop github linguist from including the test generator in language stats.
+generate.py linguist-detectable=false
