@@ -1,3 +1,4 @@
+#!/bin/bash
 valgrind=${1:-false}
 test_limit=${2:-5000}
 
