@@ -12,14 +12,19 @@ covered *exactly once*, with no overlaps and no missing pieces.
 ## How to Run
 
 Run the program:
+
 ```bash
 make algorithm_x
-./algorithm_x
+./algorithm_x < input.txt
 ```
 
-Run the automated test suite (with Valgrind for memory leak checks):
+Run the test suite:
 
 ```bash
+# Run the test suite (fast)
+./tests.sh
+
+# Run the test suite with memory leak checks (slower)
 ./tests.sh true
 ```
 
@@ -32,10 +37,10 @@ the `+` positions.
 **Input:**
 
 ```text
-+ + -
-A _ B
-_ C _
-D E _
+++-
+A_B
+_C_
+DE_
 ```
 
 **Output:**
