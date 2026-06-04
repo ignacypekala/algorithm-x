@@ -19,7 +19,7 @@ covered *exactly once*, with no overlaps and no missing pieces.
 For running the test suite:
 
 * A Linux/Unix environment (bash, sort, diff)
-* `valgrind` (required for the memory-check test suite)
+* Valgrind (required for the memory-check test suite)
 * Python 3 (optional, for running the test generators)
 
 ### Instructions
