@@ -46,18 +46,20 @@ AC
 
 ## Technical Highlights
 
-* **Dynamic Memory Management** 
+* **Dynamic Memory & Safe I/O** 
 
-    Even though the original assignment had capped
-    input sizes, I wanted to play around with dynamic allocation. The program uses
-    `malloc` and `realloc` to dynamically scale its memory footprint based on the
-    input size, applying a doubling strategy to prevent buffer overflows while
-    keeping overhead low.
+    Even though the original assignment capped input sizes, I wanted to
+    practice dynamic allocation and safe input handling. The program reads the
+    +/- filter and the matrix on the fly, using malloc and realloc with a
+    standard doubling strategy (x2) to dynamically scale its buffers. This
+    ensures the column and row counts can grow arbitrarily large without
+    risking buffer overflows, while keeping memory overhead low.
 
 * **Recursive Backtracking** 
 
     The core exact cover logic is driven by a clean, straightforward recursive
-    function that explores row combinations and
+    function that explores row combinations and gracefully backtracks when a
+    collision is detected.
 
 ## Testing Pipeline & Community Validation
 
