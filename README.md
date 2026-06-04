@@ -76,19 +76,6 @@ exact cover matrices.
 > parameters, but it successfully brute-forces the necessary edge cases for
 > validation.
 
-Custom Testing Infrastructure & Community Cross-Validation: To ensure the
-logic was sound and completely leak-proof, I wrote a custom testing suite
-that ultimately served as a testing benchmark for my classmates.
-
-tests.sh / test.sh: Bash scripts that pipe inputs into the compiled binary,
-compare outputs via diff, and verify memory safety using Valgrind.
-
-generate.py: A Python script to generate exact cover matrices.
-
-> Full disclosure: the generator is admittedly a bowl of spaghetti code
-> that only produces sensible test cases because I hand-picked the magic
-> parameters.
-
 I generated two massive test suites and shared them with my fellow students
 to help them validate their own independent projects. Because the Python
 generator relied on the same algorithmic logic as my C program, this act of
