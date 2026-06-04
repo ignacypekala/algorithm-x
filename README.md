@@ -32,7 +32,9 @@ Run the test suite:
 
 The program takes a filter of `+`/`-` characters followed by a matrix. It finds
 combinations of rows that ensure an exact cover, filtering the output based on
-the `+` positions.
+the `+` positions. 
+> Note: that the program dynamically infers the matrix dimensions from the
+> length of the first line, assuming all subsequent lines are of equal length.
 
 **Input:**
 
@@ -51,14 +53,23 @@ AC
 
 ## Technical Highlights
 
-* **Dynamic Memory & Safe I/O** 
+* **Compiler Constraints & Memory Safety**
 
-    Even though the original assignment capped input sizes, I wanted to
-    practice dynamic allocation and safe input handling. The program reads the
-    +/- filter and the matrix on the fly, using malloc and realloc with a
-    standard doubling strategy (x2) to dynamically scale its buffers. This
-    ensures the column and row counts can grow arbitrarily large without
-    risking buffer overflows, while keeping memory overhead low.
+    Built to satisfy strict academic requirements , the code compiles cleanly
+    under C23 with all warnings treated as errors (`-Werror`) and utilizes
+    undefined behavior sanitizers. Additionally, I verified the program's
+    memory management using Valgrind to ensure execution without any memory
+    leaks.
+
+* **Bounded Dynamic Memory Management** 
+
+    While the assignment's small input limits allowed for simple static arrays,
+    I wanted to use this project to practice heap allocation and safe I/O
+    handling. I implemented a dynamic memory allocation strategy that reads the
+    input on the fly, using malloc and realloc with a doubling strategy to
+    scale the buffers. To prevent buffer overflows while keeping memory
+    overhead strictly confined, the scaling is deliberately capped at the
+    assignment's guaranteed bounds (maximum 300 columns and 200 rows).
 
 * **Recursive Backtracking** 
 
@@ -83,9 +94,9 @@ memory safety, I built a custom two-part automated testing pipeline:
     serve as complex test cases.
 
 * [solver.py](./solver.py):
-    A Python implementation of Algorithm X that acts
-    as the "source of truth," solving the generated matrices to produce the correct
-    expected outputs for the test suite.
+    A Python implementation of Algorithm X that acts as the "source of truth,"
+    solving the generated matrices to produce the correct expected outputs for the
+    test suite.
 
 > Full disclosure: the generator is admittedly a bowl of spaghetti code
 > that only produces sensible test cases because I hand-picked the magic
