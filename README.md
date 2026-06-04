@@ -7,7 +7,7 @@ Given a set of elements and a collection of subsets (represented as a matrix),
 the program systematically finds combinations of rows where every element is
 covered *exactly once*, with no overlaps and no missing pieces.
 
-![preview](./assets/preview.gif)
+![usage showcase](./assets/usage.gif)
 
 ## How to Run
 
@@ -67,6 +67,8 @@ AC
     collision is detected.
 
 ## Testing Pipeline & Community Validation
+
+![test showcase](./assets/tests.gif)
 
 To thoroughly validate the recursive backtracking logic and ensure strict
 memory safety, I built a custom two-part automated testing pipeline:
