@@ -1,7 +1,7 @@
 # Algorithm X
 
-A C program that solves the **exact cover problem**
-using Donald Knuth's Algorithm X (recursive backtracking).
+A C program that solves the [exact cover problem](https://en.wikipedia.org/wiki/Exact_cover)
+using [Donald Knuth's Algorithm X](https://en.wikipedia.org/wiki/Knuth's_Algorithm_X) (recursive backtracking).
 
 Given a set of elements and a collection of subsets (represented as a matrix),
 the program systematically finds combinations of rows where every element is
