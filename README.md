@@ -130,7 +130,7 @@ larger, community-tested suite of edge cases.
 
 ## Acknowledgments & License
 
-This project was originally developed for the **Wstęp do Programowania (WDP)**
+This project was originally developed for the **Wstęp do Programowania**
 (Introductory Programming) course at MIMUW (Faculty of Mathematics, Informatics
 and Mechanics of the University of Warsaw).
 
